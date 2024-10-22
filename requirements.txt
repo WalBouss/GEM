@@ -8,7 +8,7 @@ sentencepiece
 protobuf
 timm
 einops
-open_clip_torch
+open_clip_torch<=2.23.0
 opencv-python
 matplotlib
 numpy
