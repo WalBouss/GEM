@@ -58,7 +58,7 @@ text = ['cat', 'remote control']
 
 with torch.no_grad():
     logits = gem_model(image, text)  # [B, num_prompt, W, H]
-    gem_model.visualize(image, text, logits)  # (optional visualization)
+    gem.visualize(image, text, logits)  # (optional visualization)
 ```
 
 ### Batched Inference
@@ -100,7 +100,7 @@ with torch.no_grad():
     logits_list = gem_model.batched_forward(images, texts)
     
     for i, logits in enumerate(logits_list):  # (optional visualization)
-        gem_model.visualize(images[i], texts[i], logits)
+        gem.visualize(images[i], texts[i], logits)
 ```
 
 ### API
